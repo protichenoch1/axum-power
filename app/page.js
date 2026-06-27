@@ -9,6 +9,7 @@ export default function Home() {
       perProfit: "3.20",
       daily: "3.20 USDT",
       total: "288.00 USDT",
+      img: "https://images.unsplash.com/photo-1509395176047-4a66953fd231"
     },
     {
       name: "VIP2",
@@ -17,6 +18,7 @@ export default function Home() {
       perProfit: "17.00",
       daily: "17.00 USDT",
       total: "1,530.00 USDT",
+      img: "https://images.unsplash.com/photo-1466611653911-95081537e5b7"
     },
   ];
 
@@ -28,32 +30,30 @@ export default function Home() {
         {plans.map((plan, i) => (
           <div key={i} className="card">
 
-            {/* TOP SECTION */}
+            {/* BADGE */}
+            <div className="badge">{plan.name}</div>
+
+            {/* TOP */}
             <div className="top">
-              
-              {/* LEFT ICON */}
-              <div className="icon">
-                ⚡
+
+              {/* IMAGE LEFT */}
+              <div className="imageBox">
+                <img src={plan.img} alt="" />
               </div>
 
-              {/* RIGHT TEXT */}
-              <div className="title">
-                <div className="badge">{plan.name}</div>
-                <p className="priceText">{plan.price}</p>
+              {/* INFO RIGHT */}
+              <div className="info">
+                <p>Daily Tasks <span>{plan.task}</span></p>
+                <p>Per Task Profit <span>{plan.perProfit}</span></p>
+                <p>Daily Profit <span className="green">{plan.daily}</span></p>
+                <p>Total Profit <span className="green">{plan.total}</span></p>
               </div>
 
-            </div>
-
-            {/* INFO */}
-            <div className="info">
-              <p>Daily Tasks <span>{plan.task}</span></p>
-              <p>Per Task Profit <span>{plan.perProfit}</span></p>
-              <p>Daily Profit <span className="green">{plan.daily}</span></p>
-              <p>Total Profit <span className="green">{plan.total}</span></p>
             </div>
 
             {/* FOOTER */}
             <div className="footer">
+              <div className="price">{plan.price}</div>
               <button>Unlock Now</button>
             </div>
 
@@ -62,4 +62,4 @@ export default function Home() {
       </div>
     </div>
   );
-    }
+                }
