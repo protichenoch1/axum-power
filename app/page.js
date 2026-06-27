@@ -28,8 +28,23 @@ export default function Home() {
         {plans.map((plan, i) => (
           <div key={i} className="card">
 
-            <div className="badge">{plan.name}</div>
+            {/* TOP SECTION */}
+            <div className="top">
+              
+              {/* LEFT ICON */}
+              <div className="icon">
+                ⚡
+              </div>
 
+              {/* RIGHT TEXT */}
+              <div className="title">
+                <div className="badge">{plan.name}</div>
+                <p className="priceText">{plan.price}</p>
+              </div>
+
+            </div>
+
+            {/* INFO */}
             <div className="info">
               <p>Daily Tasks <span>{plan.task}</span></p>
               <p>Per Task Profit <span>{plan.perProfit}</span></p>
@@ -37,8 +52,8 @@ export default function Home() {
               <p>Total Profit <span className="green">{plan.total}</span></p>
             </div>
 
+            {/* FOOTER */}
             <div className="footer">
-              <div className="price">{plan.price}</div>
               <button>Unlock Now</button>
             </div>
 
@@ -47,4 +62,4 @@ export default function Home() {
       </div>
     </div>
   );
-                   }
+    }
