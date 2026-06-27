@@ -1,3 +1,12 @@
+/* BODY */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#0f766e, #e5e7eb);
+  padding-bottom: 80px;
+}
+
+/* HEADER */
 .header {
   background: #065f46;
   color: white;
@@ -19,25 +28,22 @@
   text-align: center;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(#0f766e, #e5e7eb);
-  padding-bottom: 80px;
-}
-
+/* CONTAINER */
 .container {
   padding: 15px;
 }
 
+/* CARD */
 .card {
   background: white;
   border-radius: 20px;
   padding: 15px;
   margin-bottom: 20px;
   position: relative;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
 }
 
+/* BADGE */
 .badge {
   position: absolute;
   top: -10px;
@@ -46,8 +52,47 @@ body {
   padding: 6px 12px;
   border-radius: 10px;
   font-weight: bold;
+  font-size: 13px;
 }
 
+/* TOP SECTION */
+.top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* ICON (LEFT) */
+.icon {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #10b981, #34d399);
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* TITLE AREA */
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* PRICE TEXT */
+.priceText {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* INFO */
 .info p {
   display: flex;
   justify-content: space-between;
@@ -55,11 +100,13 @@ body {
   font-size: 14px;
 }
 
+/* GREEN TEXT */
 .green {
   color: #059669;
   font-weight: bold;
 }
 
+/* FOOTER */
 .footer {
   display: flex;
   margin-top: 15px;
@@ -67,22 +114,26 @@ body {
   overflow: hidden;
 }
 
+/* PRICE BOX */
 .price {
   flex: 1;
   background: #065f46;
   color: white;
   text-align: center;
   padding: 12px;
+  font-weight: bold;
 }
 
+/* BUTTON */
 button {
   flex: 1;
-  background: linear-gradient(to right, orange, gold);
+  background: linear-gradient(to right, #f59e0b, #fbbf24);
   border: none;
   color: white;
   font-weight: bold;
 }
 
+/* BOTTOM NAV */
 .bottom-nav {
   position: fixed;
   bottom: 10px;
