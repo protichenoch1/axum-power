@@ -26,6 +26,63 @@ body {
   padding-bottom: 80px;
 }
 
+.container {
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: linear-gradient(to right, gold, orange);
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.info p {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.green {
+  color: #059669;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  margin-top: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.price {
+  flex: 1;
+  background: #065f46;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+button {
+  flex: 1;
+  background: linear-gradient(to right, orange, gold);
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
 .bottom-nav {
   position: fixed;
   bottom: 10px;
