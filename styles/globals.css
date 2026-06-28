@@ -79,6 +79,12 @@ body {
   border-bottom: none;
 }
 
+.info p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* LABELS */
 .info span:first-child {
   color: #374151;
