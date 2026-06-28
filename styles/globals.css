@@ -1,9 +1,7 @@
-/* BODY */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(#0f766e, #cbd5d1);
-  padding-bottom: 100px;
+  background: linear-gradient(#0f766e, #d1d5db);
 }
 
 /* HEADER */
@@ -13,7 +11,7 @@ body {
   padding: 14px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  font-weight: bold;
 }
 
 /* CONTAINER */
@@ -23,79 +21,59 @@ body {
 
 /* CARD */
 .card {
-  background: #f3f4f6; /* FIXED (not white) */
+  background: #f3f4f6;
   border-radius: 22px;
-  padding: 14px;
-  margin-bottom: 18px;
+  padding: 12px;
+  margin-bottom: 16px;
   position: relative;
 }
 
-/* VIP BADGE */
+/* BADGE */
 .badge {
   position: absolute;
   top: -10px;
-  left: 14px;
+  left: 16px;
   background: linear-gradient(to right, #f59e0b, #fbbf24);
   color: white;
-  font-size: 13px;
+  padding: 5px 16px;
+  border-radius: 999px;
+  font-size: 12px;
   font-weight: bold;
-  padding: 6px 16px;
-  border-radius: 12px;
 }
 
-/* TOP */
-.top {
+/* CONTENT */
+.content {
   display: flex;
   gap: 10px;
 }
 
 /* IMAGE */
-.imageBox {
+.image {
   width: 38%;
-}
-
-.imageBox img {
-  width: 100%;
-  height: 95px; /* FIXED (shorter like screenshot) */
+  height: 85px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 /* INFO */
 .info {
   width: 62%;
-  font-size: 13px;
 }
 
-.info p {
+/* ROW */
+.row {
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
   margin: 4px 0;
   padding-bottom: 3px;
-  border-bottom: 1px solid #e5e7eb; /* lighter divider */
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-.info p:last-child {
+.row:last-child {
   border-bottom: none;
 }
 
-.info p {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* LABELS */
-.info span:first-child {
-  color: #374151;
-}
-
-/* VALUES */
-.info span:last-child {
-  font-weight: 600;
-}
-
-/* GREEN VALUES */
 .green {
   color: #065f46;
   font-weight: bold;
@@ -104,8 +82,10 @@ body {
 /* FOOTER */
 .footer {
   display: flex;
-  margin-top: 12px;
-  border-radius: 30px; /* FULL pill */
+  margin: 10px auto 0;
+  width: 90%;
+  height: 36px;
+  border-radius: 999px;
   overflow: hidden;
 }
 
@@ -114,43 +94,40 @@ body {
   flex: 1;
   background: linear-gradient(to right, #065f46, #0f766e);
   color: white;
-  height: 40px; /* EXACT height */
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  font-size: 13px;
 }
 
 /* BUTTON */
-button {
+.btn {
   flex: 1;
   background: linear-gradient(to right, #f59e0b, #fbbf24);
-  border: none;
   color: white;
-  height: 40px; /* MATCH price exactly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
+  font-size: 13px;
 }
 
 /* BOTTOM NAV */
-.bottom-nav {
+.bottom {
   position: fixed;
-  bottom: 12px;
-  left: 12px;
-  right: 12px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
   background: #e5e7eb;
   border-radius: 30px;
-  padding: 12px;
   display: flex;
   justify-content: space-around;
-}
-
-.bottom-nav a {
-  text-decoration: none;
-  color: #6b7280;
+  padding: 12px;
   font-size: 12px;
 }
 
-.bottom-nav .active {
+.bottom .active {
   color: #065f46;
   font-weight: bold;
-}
+  }
