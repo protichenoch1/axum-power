@@ -43,11 +43,26 @@ export default function Home() {
 
               {/* INFO RIGHT */}
               <div className="info">
-                <p>Daily Tasks <span>{plan.task}</span></p>
-                <p>Per Task Profit <span>{plan.perProfit}</span></p>
-                <p>Daily Profit <span className="green">{plan.daily}</span></p>
-                <p>Total Profit <span className="green">{plan.total}</span></p>
-              </div>
+  <p>
+    <span>Daily Tasks</span>
+    <span>{plan.task}</span>
+  </p>
+
+  <p>
+    <span>Per Task Profit</span>
+    <span>{plan.perProfit}</span>
+  </p>
+
+  <p>
+    <span>Daily Profit</span>
+    <span className="green">{plan.daily}</span>
+  </p>
+
+  <p>
+    <span>Total Profit</span>
+    <span className="green">{plan.total}</span>
+  </p>
+</div>
 
             </div>
 
