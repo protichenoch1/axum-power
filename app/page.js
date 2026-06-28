@@ -77,9 +77,11 @@ export default function Home() {
             </div>
 
             <div className="footer">
-              <div className="price">{plan.price}</div>
-              <div className="btn">Unlock Now</div>
-            </div>
+  <div className="footer-inner">
+    <div className="price">{plan.price}</div>
+    <div className="btn">Unlock Now</div>
+  </div>
+</div>
 
           </div>
         ))}
