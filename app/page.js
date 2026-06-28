@@ -1,9 +1,9 @@
-import Header from "../components/Header";
+import "./globals.css";
 
 export default function Home() {
   const plans = [
     {
-      name: "👑 VIP1",
+      name: "VIP1",
       price: "10.00 USDT",
       task: 1,
       perProfit: "3.20",
@@ -20,61 +20,80 @@ export default function Home() {
       total: "1,530.00 USDT",
       img: "https://images.unsplash.com/photo-1466611653911-95081537e5b7"
     },
+    {
+      name: "VIP3",
+      price: "150.00 USDT",
+      task: 1,
+      perProfit: "54.00",
+      daily: "54.00 USDT",
+      total: "4,860.00 USDT",
+      img: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa"
+    }
   ];
 
   return (
-    <div>
-      <Header />
+    <div className="page">
 
+      {/* HEADER */}
+      <div className="header">
+        <div className="logo">Axum Power</div>
+        <div className="lang">English ▾</div>
+      </div>
+
+      {/* CARDS */}
       <div className="container">
         {plans.map((plan, i) => (
           <div key={i} className="card">
 
-            {/* BADGE */}
-            <div className="badge">{plan.name}</div>
+            <div className="badge">👑 {plan.name}</div>
 
-            {/* TOP */}
-            <div className="top">
+            <div className="content">
 
-              {/* IMAGE LEFT */}
-              <div className="imageBox">
-                <img src={plan.img} alt="" />
-              </div>
+              <img src={plan.img} className="image" />
 
-              {/* INFO RIGHT */}
               <div className="info">
-  <p>
-    <span>Daily Tasks</span>
-    <span>{plan.task}</span>
-  </p>
 
-  <p>
-    <span>Per Task Profit</span>
-    <span>{plan.perProfit}</span>
-  </p>
+                <div className="row">
+                  <span>📋 Daily Tasks</span>
+                  <span>{plan.task}</span>
+                </div>
 
-  <p>
-    <span>Daily Profit</span>
-    <span className="green">{plan.daily}</span>
-  </p>
+                <div className="row">
+                  <span>💰 Per-Task Profit</span>
+                  <span>{plan.perProfit}</span>
+                </div>
 
-  <p>
-    <span>Total Profit</span>
-    <span className="green">{plan.total}</span>
-  </p>
-</div>
+                <div className="row">
+                  <span>📈 Daily Profit</span>
+                  <span className="green">{plan.daily}</span>
+                </div>
 
+                <div className="row">
+                  <span>💵 Total Profit</span>
+                  <span className="green">{plan.total}</span>
+                </div>
+
+              </div>
             </div>
 
-            {/* FOOTER */}
             <div className="footer">
               <div className="price">{plan.price}</div>
-              <button>Unlock Now</button>
+              <div className="btn">Unlock Now</div>
             </div>
 
           </div>
         ))}
       </div>
+
+      {/* BOTTOM NAV */}
+      <div className="bottom">
+        <span className="active">Home</span>
+        <span>Tasks</span>
+        <span>Team</span>
+        <span>VIP</span>
+        <span>Me</span>
+      </div>
+
     </div>
   );
-                }
+        }
