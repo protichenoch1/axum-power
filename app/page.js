@@ -3,7 +3,7 @@ import Header from "../components/Header";
 export default function Home() {
   const plans = [
     {
-      name: "VIP1",
+      name: "👑 VIP1",
       price: "10.00 USDT",
       task: 1,
       perProfit: "3.20",
