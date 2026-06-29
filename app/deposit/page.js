@@ -62,6 +62,22 @@ export default function Deposit() {
   </div>
 
 </div>
+
+      <div className="card">
+  <div className="row">
+    <span>Deposit Address</span>
+  </div>
+
+  <div className="address">
+    {method === "usdt" && "TXYZ1234567890ABC..."}
+    {method === "btc" && "bc1qexampleaddress..."}
+    {method === "eth" && "0xExampleAddress123..."}
+  </div>
+
+  <small style={{ color: "gray" }}>
+    Send only {method.toUpperCase()} to this address
+  </small>
+</div>
         </div>
 
         {/* SUMMARY */}
