@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import Slider from "../components/Slider";
 
 export default function Home() {
   const plans = [
