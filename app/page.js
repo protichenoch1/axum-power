@@ -1,8 +1,18 @@
 "use client";
 import "../styles/globals.css";
 import Slider from "../components/Slider";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+
+  const [balance, setBalance] = useState(0);
+
+useEffect(() => {
+  const saved = localStorage.getItem("balance");
+  if (saved) setBalance(Number(saved));
+}, []);
+  
   const plans = [
   { name: "VIP1", price: "$10.00 USDT", period: "60 days", daily: "$1", total: "$60", img: "/plans/VIP.png" },
   { name: "VIP2", price: "$25.00 USDT", period: "60 days", daily: "$1.75", total: "$105", img: "/plans/VIP.png" },
@@ -39,7 +49,7 @@ export default function Home() {
   </div>
 
   <div className="balance-actions">
-    <button className="deposit">Deposit</button>
+    <Link href="/deposit" className="deposit">Deposit</Link>
     <button className="withdraw">Withdraw</button>
   </div>
 </div>
