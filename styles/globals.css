@@ -277,3 +277,21 @@ body {
   font-weight: 600;
   color: #fff;
 }
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.image {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+}
