@@ -38,9 +38,13 @@ export default function Home() {
 
       {/* HEADER */}
       <div className="header">
-        <div className="logo">Axum Power</div>
-        <div className="lang">English ▾</div>
-      </div>
+  <div className="logo-wrap">
+    <img src="/logo.png" alt="Axum Power" />
+    <span>Axum Power</span>
+  </div>
+
+  <div className="lang">English ▾</div>
+</div>
 
 <Slider />
 
