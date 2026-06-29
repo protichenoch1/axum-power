@@ -94,6 +94,15 @@ export default function Home() {
         ))}
       </div>
 
+      {/* FIX: proper nav structure */}
+      <div className="bottom">
+        <div className="nav-item active">Home</div>
+        <div className="nav-item">Tasks</div>
+        <div className="nav-item">Team</div>
+        <div className="nav-item">VIP</div>
+        <div className="nav-item">Me</div>
       </div>
+
+    </div>
   );
-                  }
+                    }
