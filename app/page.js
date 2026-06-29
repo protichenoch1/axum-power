@@ -6,7 +6,7 @@ export default function Home() {
   const plans = [
   { name: "VIP1", price: "$10.00 USDT", period: "60 days", daily: "$1", total: "$60", img: "/plans/VIP.png" },
   { name: "VIP2", price: "$25.00 USDT", period: "60 days", daily: "$1.75", total: "$105", img: "/plans/VIP.png" },
-  { nane: "VIP3", price: "$35.00 USDT", period: "60 days", daily: "$2.5", total: "$150", img: "/plans/VIP.png" },
+  { name: "VIP3", price: "$35.00 USDT", period: "60 days", daily: "$2.5", total: "$150", img: "/plans/VIP.png" },
   { name: "VIP4", price: "$45.00 USDT", period: "60 days", daily: "$3.5", total: "$210", img: "/plans/VIP.png" },
   { name: "VIP5", price: "$60.00 USDT", period: "60 days", daily: "$5", total: "$300", img: "/plans/VIP.png" },
   { name: "VIP6", price: "$80.00 USDT", period: "90 days", daily: "$6.5", total: "$585", img: "/plans/VIP.png" },
