@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* IMAGE */}
       <img
-        src={plan.img || "/default.jpg"}
+        src="/VIP.jpg"
         alt={plan.name}
         className="image"
         loading="lazy"
