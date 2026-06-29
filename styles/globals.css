@@ -9,6 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(#0f766e, #d1d5db);
+  min-height: 100vh;
 }
 
 /* HEADER */
@@ -26,7 +27,7 @@ body {
 /* CONTAINER */
 .container {
   padding: 10px;
-  padding-bottom: 90px; /* prevents overlap with nav */
+  padding-bottom: 60px; /* prevents overlap with nav */
 }
 
 /* CARD */
@@ -132,7 +133,7 @@ body {
   bottom: 12px;
   left: 12px;
   right: 12px;
-  height: 55px;
+  height: 45px;
   background: #e5e7eb;
   border-radius: 30px;
   display: flex;
@@ -156,3 +157,9 @@ body {
   color: #065f46;
   font-weight: 600;
 }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  }
