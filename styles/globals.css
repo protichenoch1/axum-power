@@ -313,3 +313,14 @@ body {
   font-weight: bold;
   font-size: 14px;
     }
+
+.balance-actions a {
+  flex: 1;
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
