@@ -4,16 +4,16 @@ import Slider from "../components/Slider";
 
 export default function Home() {
   const plans = [
-  { name: "VIP1", price: "$10.00 USDT", period: "60 days", daily: "$1", total: "$60", img: "/plans/VIP.png" },
-  { name: "VIP2", price: "$25.00 USDT", period: "60 days", daily: "$1.75", total: "$105", img: "/plans/VIP.png" },
-  { name: "VIP3", price: "$35.00 USDT", period: "60 days", daily: "$2.5", total: "$150", img: "/plans/VIP.png" },
-  { name: "VIP4", price: "$45.00 USDT", period: "60 days", daily: "$3.5", total: "$210", img: "/plans/VIP.png" },
-  { name: "VIP5", price: "$60.00 USDT", period: "60 days", daily: "$5", total: "$300", img: "/plans/VIP.png" },
-  { name: "VIP6", price: "$80.00 USDT", period: "90 days", daily: "$6.5", total: "$585", img: "/plans/VIP.png" },
-  { name: "VIP7", price: "$100.00 USDT", period: "90 days", daily: "$8", total: "$720", img: "/plans/VIP.png" },
-  { name: "VIP8", price: "$140.00 USDT", period: "90 days", daily: "$10", total: "$900", img: "/plans/VIP.png" },
-  { name: "VIP9", price: "$200.00 USDT", period: "90 days", daily: "$15", total: "$1,350", img: "/plans/VIP.png" },
-  { name: "VIP10", price: "$500.00 USDT", period: "90 days", daily: "$25", total: "$2,250", img: "/plans/VIP.png" }
+  { price: "$10.00 USDT", period: "60 days", daily: "$1", total: "$60", img: "/plans/VIP.png" },
+  { price: "$25.00 USDT", period: "60 days", daily: "$1.75", total: "$105", img: "/plans/VIP.png" },
+  { price: "$35.00 USDT", period: "60 days", daily: "$2.5", total: "$150", img: "/plans/VIP.png" },
+  { price: "$45.00 USDT", period: "60 days", daily: "$3.5", total: "$210", img: "/plans/VIP.png" },
+  { price: "$60.00 USDT", period: "60 days", daily: "$5", total: "$300", img: "/plans/VIP.png" },
+  { price: "$80.00 USDT", period: "90 days", daily: "$6.5", total: "$585", img: "/plans/VIP.png" },
+  { price: "$100.00 USDT", period: "90 days", daily: "$8", total: "$720", img: "/plans/VIP.png" },
+  { price: "$140.00 USDT", period: "90 days", daily: "$10", total: "$900", img: "/plans/VIP.png" },
+  { price: "$200.00 USDT", period: "90 days", daily: "$15", total: "$1,350", img: "/plans/VIP.png" },
+  { price: "$500.00 USDT", period: "90 days", daily: "$25", total: "$2,250", img: "/plans/VIP.png" }
 ];
 
   return (
