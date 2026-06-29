@@ -94,8 +94,6 @@ export default function Home() {
         ))}
       </div>
 
-      <BottomNav />
-
     </div>
   );
                     }
