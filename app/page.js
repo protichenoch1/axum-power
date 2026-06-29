@@ -40,6 +40,28 @@ export default function Home() {
         <div className="lang">English ▾</div>
       </div>
 
+  {/* SLIDER */}
+<div className="slider">
+  <div className="slides">
+    <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" />
+    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7" />
+    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa" />
+  </div>
+</div>
+
+{/* BALANCE CARD */}
+<div className="balance">
+  <div className="balance-top">
+    <span>Total Balance</span>
+    <span className="amount">0.00 USDT</span>
+  </div>
+
+  <div className="balance-actions">
+    <button className="deposit">Deposit</button>
+    <button className="withdraw">Withdraw</button>
+  </div>
+</div>
+
       {/* MAIN CONTENT */}
       <div className="container">
         {plans.map((plan, i) => (
