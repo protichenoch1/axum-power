@@ -57,10 +57,10 @@ body {
 /* IMAGE */
 .image {
   width: 38%;
-  height: 85px;
+  height: 95px;
   object-fit: cover;
   border-radius: 14px;
-  margin-top: 12px; /* moved slightly down */
+  margin-top: 14px; /* moved slightly down */
 }
 
 /* INFO */
