@@ -3,10 +3,12 @@ import "../styles/globals.css";
 import Slider from "../components/Slider";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
 
   const [balance, setBalance] = useState(0);
+  const router = useRouter();
 
 useEffect(() => {
   const saved = localStorage.getItem("balance");
@@ -49,9 +51,20 @@ useEffect(() => {
   </div>
 
   <div className="balance-actions">
-    <Link href="/deposit" className="deposit">Deposit</Link>
-    <button className="withdraw">Withdraw</button>
-  </div>
+  <button
+    className="deposit"
+    onClick={() => router.push("/deposit")}
+  >
+    Deposit
+  </button>
+
+  <button
+    className="withdraw"
+    onClick={() => router.push("/withdraw")}
+  >
+    Withdraw
+  </button>
+</div>
 </div>
 
       {/* MAIN CONTENT */}
