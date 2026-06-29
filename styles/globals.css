@@ -126,31 +126,33 @@ body {
   align-items: center;
 }
 
-/* ===== BOTTOM NAV (FIXED PROPERLY) ===== */
-.bottom {
+/* BOTTOM NAV (PILL STYLE) */
+.bottom-nav {
   position: fixed;
-  bottom: 0;          /* FIX: remove floating gap */
-  left: 0;
-  right: 0;
-  height: 60px;       /* FIX: consistent height */
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  height: 55px;
   background: #e5e7eb;
+  border-radius: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid rgba(0,0,0,0.05);
   z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* NAV ITEMS */
-.nav-item {
+/* LINKS */
+.bottom-nav a {
   flex: 1;
   text-align: center;
   font-size: 12px;
-  color: #555;
+  color: #6b7280;
+  text-decoration: none;
 }
 
-/* ACTIVE */
-.nav-item.active {
+/* ACTIVE TAB */
+.bottom-nav a.active {
   color: #065f46;
   font-weight: 600;
 }
