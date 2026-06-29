@@ -60,7 +60,7 @@ body {
   height: 85px;
   object-fit: cover;
   border-radius: 14px;
-  margin-top: 6px; /* moved slightly down */
+  margin-top: 12px; /* moved slightly down */
 }
 
 /* INFO */
