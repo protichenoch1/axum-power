@@ -40,21 +40,28 @@ export default function Deposit() {
 
           <div className="methods">
 
-            <div
-              className={`method ${method === "mpesa" ? "active" : ""}`}
-              onClick={() => setMethod("mpesa")}
-            >
-              📱 M-Pesa
-            </div>
+  <div
+    className={`method ${method === "usdt" ? "active" : ""}`}
+    onClick={() => setMethod("usdt")}
+  >
+    💰 USDT (TRC20)
+  </div>
 
-            <div
-              className={`method ${method === "card" ? "active" : ""}`}
-              onClick={() => setMethod("card")}
-            >
-              💳 Card
-            </div>
+  <div
+    className={`method ${method === "btc" ? "active" : ""}`}
+    onClick={() => setMethod("btc")}
+  >
+    ₿ Bitcoin
+  </div>
 
-          </div>
+  <div
+    className={`method ${method === "eth" ? "active" : ""}`}
+    onClick={() => setMethod("eth")}
+  >
+    Ξ Ethereum
+  </div>
+
+</div>
         </div>
 
         {/* SUMMARY */}
