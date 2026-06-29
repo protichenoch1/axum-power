@@ -47,51 +47,50 @@ export default function Home() {
       {/* MAIN CONTENT */}
       <div className="container">
         {plans.map((plan, i) => (
-<div key={i} className="card">
+  <div key={i} className="card">
 
-  <div className="badge">👑 {plan.name}</div>
+    <div className="badge">👑 {plan.name}</div>
 
-  <div className="content">
+    <div className="content">
 
-  {/* LEFT IMAGE */}
-  <img
-    src={plan.img}
-    alt={plan.name}
-    className="image"
-    loading="lazy"
-  />
+      {/* IMAGE */}
+      <img
+        src={plan.img || "/default.jpg"}
+        alt={plan.name}
+        className="image"
+        loading="lazy"
+      />
 
-  {/* RIGHT INFO */}
-  <div className="info">
-    <div className="row">
-      <span>📅 Period</span>
-      <span>{plan.period}</span>
+      {/* INFO */}
+      <div className="info">
+        <div className="row">
+          <span>📅 Period</span>
+          <span>{plan.period}</span>
+        </div>
+
+        <div className="row">
+          <span>💰 Daily Earnings</span>
+          <span className="green">{plan.daily}</span>
+        </div>
+
+        <div className="row">
+          <span>📈 Total Return</span>
+          <span className="green">{plan.total}</span>
+        </div>
+      </div>
+
     </div>
 
-    <div className="row">
-      <span>💰 Daily Earnings</span>
-      <span className="green">{plan.daily}</span>
+    {/* ✅ FOOTER MUST BE INSIDE CARD */}
+    <div className="footer">
+      <div className="footer-inner">
+        <div className="price">{plan.price}</div>
+        <div className="btn">Unlock Now</div>
+      </div>
     </div>
 
-    <div className="row">
-      <span>📈 Total Return</span>
-      <span className="green">{plan.total}</span>
-    </div>
   </div>
-
-</div>
-
-  </div>
-
-  <div className="footer">
-    <div className="footer-inner">
-      <div className="price">{plan.price}</div>
-      <div className="btn">Unlock Now</div>
-    </div>
-  </div>
-
-</div>
-        ))}
+))}
       </div>
 
     </div>
