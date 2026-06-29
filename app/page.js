@@ -40,7 +40,7 @@ export default function Home() {
         <div className="lang">English ▾</div>
       </div>
 
-      {/* CARDS */}
+      {/* MAIN CONTENT */}
       <div className="container">
         {plans.map((plan, i) => (
           <div key={i} className="card">
@@ -48,9 +48,17 @@ export default function Home() {
             <div className="badge">👑 {plan.name}</div>
 
             <div className="content">
-              <img src={plan.img} className="image" />
+
+              {/* FIX: always include alt + loading */}
+              <img
+                src={plan.img}
+                alt={plan.name}
+                className="image"
+                loading="lazy"
+              />
 
               <div className="info">
+
                 <div className="row">
                   <span>📋 Daily Tasks</span>
                   <span>{plan.task}</span>
@@ -70,13 +78,15 @@ export default function Home() {
                   <span>💵 Total Profit</span>
                   <span className="green">{plan.total}</span>
                 </div>
+
               </div>
             </div>
 
+            {/* FIX: clean footer */}
             <div className="footer">
               <div className="footer-inner">
                 <div className="price">{plan.price}</div>
-                <div className="btn">Unlock Now</div>
+                <div className="btn">Unlock</div>
               </div>
             </div>
 
@@ -84,7 +94,7 @@ export default function Home() {
         ))}
       </div>
 
-      {/* BOTTOM NAV */}
+      {/* FIX: proper nav structure */}
       <div className="bottom">
         <div className="nav-item active">Home</div>
         <div className="nav-item">Tasks</div>
@@ -95,4 +105,4 @@ export default function Home() {
 
     </div>
   );
-        }
+                  }
