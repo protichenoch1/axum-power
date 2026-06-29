@@ -326,16 +326,6 @@ body {
   display: block;
 }
 
-.address {
-  margin-top: 8px;
-  padding: 10px;
-  background: #111;
-  color: #0f0;
-  border-radius: 10px;
-  font-size: 12px;
-  word-break: break-all;
-    }
-
 /* QR */
 .qr-box {
   display: flex;
