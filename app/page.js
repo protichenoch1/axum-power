@@ -4,34 +4,17 @@ import Slider from "../components/Slider";
 
 export default function Home() {
   const plans = [
-    {
-      name: "VIP1",
-      price: "10.00 USDT",
-      task: 1,
-      perProfit: "3.20",
-      daily: "3.20 USDT",
-      total: "288.00 USDT",
-      img: "https://images.unsplash.com/photo-1509395176047-4a66953fd231"
-    },
-    {
-      name: "VIP2",
-      price: "50.00 USDT",
-      task: 1,
-      perProfit: "17.00",
-      daily: "17.00 USDT",
-      total: "1,530.00 USDT",
-      img: "https://images.unsplash.com/photo-1466611653911-95081537e5b7"
-    },
-    {
-      name: "VIP3",
-      price: "150.00 USDT",
-      task: 1,
-      perProfit: "54.00",
-      daily: "54.00 USDT",
-      total: "4,860.00 USDT",
-      img: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa"
-    }
-  ];
+  { name: "VIP1", price: "$10", period: "60 days", daily: "$1", total: "$60" },
+  { name: "VIP2", price: "$25", period: "60 days", daily: "$1.75", total: "$105" },
+  { name: "VIP3", price: "$35", period: "60 days", daily: "$2.5", total: "$150" },
+  { name: "VIP4", price: "$45", period: "60 days", daily: "$3.5", total: "$210" },
+  { name: "VIP5", price: "$60", period: "60 days", daily: "$5", total: "$300" },
+  { name: "VIP6", price: "$80", period: "90 days", daily: "$6.5", total: "$585" },
+  { name: "VIP7", price: "$100", period: "90 days", daily: "$8", total: "$720" },
+  { name: "VIP8", price: "$140", period: "90 days", daily: "$10", total: "$900" },
+  { name: "VIP9", price: "$200", period: "90 days", daily: "$15", total: "$1,350" },
+  { name: "VIP10", price: "$500", period: "90 days", daily: "$25", total: "$2,250" }
+];
 
   return (
     <div className="page">
@@ -64,52 +47,39 @@ export default function Home() {
       {/* MAIN CONTENT */}
       <div className="container">
         {plans.map((plan, i) => (
-          <div key={i} className="card">
+<div key={i} className="card">
 
-            <div className="badge">👑 {plan.name}</div>
+  <div className="badge">👑 {plan.name}</div>
 
-            <div className="content">
+  <div className="content">
 
-              {/* FIX: always include alt + loading */}
-              <img
-                src={plan.img}
-                alt={plan.name}
-                className="image"
-                loading="lazy"
-              />
+    <div className="info">
+      <div className="row">
+        <span>📅 Period</span>
+        <span>{plan.period}</span>
+      </div>
 
-              <div className="info">
+      <div className="row">
+        <span>💰 Daily Earnings</span>
+        <span className="green">{plan.daily}</span>
+      </div>
 
-                <div className="row">
-                  <span>📋 Daily Tasks</span>
-                  <span>{plan.task}</span>
-                </div>
+      <div className="row">
+        <span>📈 Total Return</span>
+        <span className="green">{plan.total}</span>
+      </div>
+    </div>
 
-                <div className="row">
-                  <span>💰 Per-Task Profit</span>
-                  <span>{plan.perProfit}</span>
-                </div>
+  </div>
 
-                <div className="row">
-                  <span>📈 Daily Profit</span>
-                  <span className="green">{plan.daily}</span>
-                </div>
+  <div className="footer">
+    <div className="footer-inner">
+      <div className="price">{plan.price}</div>
+      <div className="btn">Unlock Now</div>
+    </div>
+  </div>
 
-                <div className="row">
-                  <span>💵 Total Profit</span>
-                  <span className="green">{plan.total}</span>
-                </div>
-
-              </div>
-            </div>
-
-            {/* FIX: clean footer */}
-            <div className="footer">
-              <div className="footer-inner">
-                <div className="price">{plan.price}</div>
-                <div className="btn">Unlock Now</div>
-              </div>
-            </div>
+</div>
 
           </div>
         ))}
