@@ -53,22 +53,33 @@ export default function Home() {
 
   <div className="content">
 
-    <div className="info">
-      <div className="row">
-        <span>📅 Period</span>
-        <span>{plan.period}</span>
-      </div>
+  {/* LEFT IMAGE */}
+  <img
+    src={plan.img}
+    alt={plan.name}
+    className="image"
+    loading="lazy"
+  />
 
-      <div className="row">
-        <span>💰 Daily Earnings</span>
-        <span className="green">{plan.daily}</span>
-      </div>
-
-      <div className="row">
-        <span>📈 Total Return</span>
-        <span className="green">{plan.total}</span>
-      </div>
+  {/* RIGHT INFO */}
+  <div className="info">
+    <div className="row">
+      <span>📅 Period</span>
+      <span>{plan.period}</span>
     </div>
+
+    <div className="row">
+      <span>💰 Daily Earnings</span>
+      <span className="green">{plan.daily}</span>
+    </div>
+
+    <div className="row">
+      <span>📈 Total Return</span>
+      <span className="green">{plan.total}</span>
+    </div>
+  </div>
+
+</div>
 
   </div>
 
