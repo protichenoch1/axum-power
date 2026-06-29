@@ -335,3 +335,44 @@ body {
   font-size: 12px;
   word-break: break-all;
     }
+
+/* QR */
+.qr-box {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.qr-box img {
+  width: 140px;
+  height: 140px;
+}
+
+/* ADDRESS */
+.address {
+  background: #111;
+  color: #0f0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  word-break: break-all;
+  margin-bottom: 8px;
+}
+
+/* COPY BUTTON */
+.copy-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #065f46;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* NOTE */
+.note {
+  font-size: 11px;
+  color: gray;
+}
