@@ -48,11 +48,9 @@ export default function Home() {
             <div className="badge">👑 {plan.name}</div>
 
             <div className="content">
-
               <img src={plan.img} className="image" />
 
               <div className="info">
-
                 <div className="row">
                   <span>📋 Daily Tasks</span>
                   <span>{plan.task}</span>
@@ -72,16 +70,15 @@ export default function Home() {
                   <span>💵 Total Profit</span>
                   <span className="green">{plan.total}</span>
                 </div>
-
               </div>
             </div>
 
             <div className="footer">
-  <div className="footer-inner">
-    <div className="price">{plan.price}</div>
-    <div className="btn">Unlock Now</div>
-  </div>
-</div>
+              <div className="footer-inner">
+                <div className="price">{plan.price}</div>
+                <div className="btn">Unlock Now</div>
+              </div>
+            </div>
 
           </div>
         ))}
@@ -89,11 +86,11 @@ export default function Home() {
 
       {/* BOTTOM NAV */}
       <div className="bottom">
-        <span className="active">Home</span>
-        <span>Tasks</span>
-        <span>Team</span>
-        <span>VIP</span>
-        <span>Me</span>
+        <div className="nav-item active">Home</div>
+        <div className="nav-item">Tasks</div>
+        <div className="nav-item">Team</div>
+        <div className="nav-item">VIP</div>
+        <div className="nav-item">Me</div>
       </div>
 
     </div>
