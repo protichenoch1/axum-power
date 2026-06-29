@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(#0f766e, #d1d5db);
@@ -14,67 +15,70 @@ body {
 .header {
   background: #065f46;
   color: white;
-  padding: 14px;
+  padding: 12px 14px;
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /* CONTAINER */
 .container {
-  padding: 12px;
+  padding: 10px;
+  padding-bottom: 90px; /* prevents overlap with nav */
 }
 
 /* CARD */
 .card {
   background: #f3f4f6;
-  border-radius: 22px;
-  padding: 12px;
-  margin-bottom: 16px;
+  border-radius: 16px;
+  padding: 10px;
+  margin-bottom: 12px;
   position: relative;
 }
 
 /* BADGE */
 .badge {
   position: absolute;
-  top: -10px;
-  left: 16px;
+  top: -8px;
+  left: 12px;
   background: linear-gradient(to right, #f59e0b, #fbbf24);
   color: white;
-  padding: 5px 14px;
+  padding: 4px 12px;
   border-radius: 999px;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 /* CONTENT */
 .content {
   display: flex;
-  gap: 10px;
-  align-items: flex-start;
+  gap: 8px;
+  align-items: center; /* FIXED */
 }
 
-/* IMAGE */
+/* IMAGE (FIXED SIZE) */
 .image {
-  width: 38%;
-  height: 100px;
+  width: 80px;
+  height: 65px;
   object-fit: cover;
-  border-radius: 14px;
-  margin-top: 16px; /* moved slightly down */
+  border-radius: 10px;
+  flex-shrink: 0;
 }
 
 /* INFO */
 .info {
-  width: 62%;
+  flex: 1;
 }
 
 /* ROW */
 .row {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
-  margin: 4px 0;
-  padding-bottom: 3px;
+  font-size: 11px;
+  margin: 3px 0;
+  padding-bottom: 2px;
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -84,64 +88,69 @@ body {
 
 .green {
   color: #065f46;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* FOOTER (RIGHT ALIGNED) */
+/* FOOTER */
 .footer {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
-/* INNER WRAPPER */
 .footer-inner {
   display: flex;
+  border-radius: 8px;
   overflow: hidden;
-  border-radius: 10px; /* slightly rounded, not pill */
 }
 
 /* PRICE */
 .price {
   background: linear-gradient(to right, #065f46, #0f766e);
   color: white;
-  height: 30px;
-  padding: 0 14px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 /* BUTTON */
 .btn {
   background: linear-gradient(to right, #f59e0b, #fbbf24);
   color: white;
-  height: 30px;
-  padding: 0 14px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: bold;
 }
 
-/* BOTTOM NAV */
+/* ===== BOTTOM NAV (FIXED PROPERLY) ===== */
 .bottom {
   position: fixed;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
+  bottom: 0;          /* FIX: remove floating gap */
+  left: 0;
+  right: 0;
+  height: 60px;       /* FIX: consistent height */
   background: #e5e7eb;
-  border-radius: 30px;
   display: flex;
   justify-content: space-around;
-  padding: 12px;
-  font-size: 12px;
+  align-items: center;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  z-index: 1000;
 }
 
-.bottom .active {
+/* NAV ITEMS */
+.nav-item {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+}
+
+/* ACTIVE */
+.nav-item.active {
   color: #065f46;
-  font-weight: bold;
-  }
+  font-weight: 600;
+}
