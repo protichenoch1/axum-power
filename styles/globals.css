@@ -269,3 +269,47 @@ body {
   border-radius: 10px;
   flex-shrink: 0;
 }
+
+/* INPUT */
+.input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* METHODS */
+.methods {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.method {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background: #e5e7eb;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.method.active {
+  background: #065f46;
+  color: white;
+}
+
+/* BUTTON */
+.deposit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #f59e0b, #fbbf24);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+    }
