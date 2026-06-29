@@ -88,7 +88,7 @@ body {
 /* BADGE */
 .badge {
   position: absolute;
-  top: -8px;
+  top: -10px;
   left: 12px;
   background: linear-gradient(to right, #f59e0b, #fbbf24);
   color: white;
@@ -96,6 +96,7 @@ body {
   border-radius: 999px;
   font-size: 11px;
   font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 /* INFO */
@@ -237,13 +238,6 @@ body {
   border-radius: 10px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-}
-
 .logo-wrap {
   display: flex;
   align-items: center;
@@ -274,8 +268,4 @@ body {
   object-fit: cover;
   border-radius: 10px;
   flex-shrink: 0;
-}
-
-.info {
-  flex: 1;
 }
