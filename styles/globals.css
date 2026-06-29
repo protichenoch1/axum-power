@@ -98,22 +98,6 @@ body {
   font-weight: 600;
 }
 
-/* CONTENT */
-.content {
-  display: flex;
-  gap: 8px;
-  align-items: center; /* FIXED */
-}
-
-/* IMAGE (FIXED SIZE) */
-.image {
-  width: 80px;
-  height: 65px;
-  object-fit: cover;
-  border-radius: 10px;
-  flex-shrink: 0;
-}
-
 /* INFO */
 .info {
   flex: 1;
